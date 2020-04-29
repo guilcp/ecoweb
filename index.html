@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>EcoWeb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="shortcut icon" href="imgs/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="modal fade" id="modalGaleria" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalImagens" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Imagens</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="container header destaque">
+        <div class="row">
+            <div class="col-12 col-sm-7 col-md-8 col-lg-9 col-xl-9">
+                <img src="imgs/logo_transparent_cortado.png" class="logo">
+            </div>
+            <div class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-3 ">
+                <p class="" id="links"><a href="#">Inscrever</a> | <a href="#">Registrar</a> | <a href="#">Log In</a></p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 memu_area">
+                <nav class="navbar navbar-expand-lg ">
+                    <button class="navbar-toggler col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span><i class="fas fa-bars"></i><p>Menu</p>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active ">
+                                <a class="nav-link" href="#"><i class="fas fa-home"></i><span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Animais</a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Notícias
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Domésticos</a>
+                                    <a class="dropdown-item" href="#">Silvestres</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Aquáticos</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Projetos
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Amazônia</a>
+                                    <a class="dropdown-item" href="#">Oceano</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Quem somos?
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Apresentação</a>
+                                    <a class="dropdown-item" href="#">História</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Contato</a>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Loja Online</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2 col-10 col-sm-5 col-md-4 col-lg-9 col-xl-9" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i
+                                    class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div id="carouselPrincipal" class="carousel slide" data-ride="carousel" style="width: 100%; height: 400px !important;">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselPrincipal" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselPrincipal" data-slide-to="1"></li>
+                                <li data-target="#carouselPrincipal" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://s2.glbimg.com/-85LOXwsw2VCzKFeLmUZR2JcdGU=/0x0:1200x675/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/O/v/mWFPAHTUSEUpPZ51OjkA/a0.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-md-block">
+                                        <h5>Alertas de desmatamento na Amazônia crescem 29,9% em março, mostram dados do Inpe</h5>
+                                        <p>Março de 2020 registrou a segunda maior taxa para o mês nos últimos 5 anos, atrás apenas de 2018.</p>
+
+                                    </div>
+                                    <a target="_blank" href="https://g1.globo.com/natureza/noticia/2020/04/10/alertas-de-desmatamento-na-amazonia-crescem-299percent-em-marco-mostram-dados-de-sistema-do-inpe.ghtml" class="stretched-link"></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://wallpapertag.com/wallpaper/full/c/d/f/961684-cow-backgrounds-1920x1200-hd-for-mobile.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-md-block">
+                                        <h5>Criadores do interior de SP apostam na produção do 'leite verde'</h5>
+                                        <p>Técnica intensifica o uso da pastagem na alimentação das vacas, o que melhora o bem estar animal e traz mais produtividade.</p>
+                                    </div>
+                                    <a target="_blank" href="https://g1.globo.com/economia/agronegocios/globo-rural/noticia/2020/04/12/criadores-do-interior-de-sp-apostam-na-producao-do-leite-verde.ghtml" class="stretched-link"></a>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://s2.glbimg.com/cICYemd4ITJPrcPDFqm4E2_Kc0w=/0x0:3500x2333/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/T/N/qeZG7GTE6qNciYDxyPzA/roundup.jpg" class="d-block w-100 " alt="...">
+                                    <div class="carousel-caption d-md-block ">
+                                        <h5>Bayer pagará US$ 40 milhões em processo sobre o agrotóxico glifosato nos EUA</h5>
+                                        <p>Consumidores acusavam a Monsanto, subsidiária da empresa alemã, de ocultar em seus anúncios publicitários os riscos à saúde causado pelo pesticida.</p>
+                                    </div>
+                                    <a target="_blank" href="https://g1.globo.com/economia/agronegocios/noticia/2020/03/31/bayer-pagara-us-40-milhoes-em-processo-sobre-o-agrotoxico-glifosato-nos-eua.ghtml" class="stretched-link"></a>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselPrincipal" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselPrincipal" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                        <div id="exclusivo" class="card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                                    <h6 id="tagExclusivo" class="secao destaque"><strong>Exclusivo</strong></h6>
+                                    <img src="https://s2.glbimg.com/AS_DhN62t1-_YJ4p97KdWCBQ2Zg=/0x0:1442x1080/1600x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/Z/p/u94AD0TbAhgZH8zZFjmA/soim-preto-foto-thiagogomide.jpg" class="card-img"
+                                        alt="...">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pesquisadores montam armadilhas fotográficas para estudar mamíferos do Parque da Serra do Divisor</h5>
+                                        <p class="card-text">Imagens foram colhidas entre novembro e dezembro do ano passado e agora seguem sendo analisadas. Algumas espécies são endêmicas da região.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a target="_blank" href="https://g1.globo.com/ac/acre/natureza/amazonia/noticia/2020/03/11/pesquisadores-montam-armadilhas-fotograficas-para-estudar-mamiferos-do-parque-da-serra-do-divisor.ghtml" class="stretched-link"></a>
+                            </div>
+                        </div>
+                        <div class="row destaque secao">
+                            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                <h3 class=" ">Notícias</h3>
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                                <button id="optionGrid" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                                <button id="optionList" onclick="listView()"><i class="fa fa-bars"></i> List</button>
+                            </div>
+                        </div>
+
+                        <div id="grid" class="row row-cols-1 row-cols-md-2">
+                            <div class="col mb-4">
+                                <div class="card">
+                                    <img src="https://s2.glbimg.com/SSQ9TnWyxPDvd38lCW4fBw2LVMY=/0x0:2000x1333/1600x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/0/v/n1mxdVTvOHII3Vd0YHwA/foca-reinserida.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Foca resgatada com desidratação é reinserida na natureza nos EUA</h5>
+                                        <p class="card-text">Apelidada de Amélia Bedélia, a foca ficou 3 semanas sob os cuidados no Aquário Nacional, em Baltimore.</p>
+                                    </div>
+                                    <a target="_blank" href="https://g1.globo.com/olha-que-legal/noticia/2020/03/24/foca-resgatada-com-desidratacao-e-reinserida-na-natureza-nos-eua.ghtml" class="stretched-link"></a>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card">
+                                    <img src="https://s2.glbimg.com/HpMDRN0kqDlozYKdPhLU6oJXoHg=/0x10:1280x715/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/3/Y/bT4jPmToyixYswJgZWig/whatsapp-image-2020-03-11-at-20.18.21.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fotos em área indígena mostram desmatamento causado por fraudes em manejos florestais no MA</h5>
+                                        <p class="card-text">Imagens fazem parte da 'Operação Canafístula', da Polícia Federal, que acusa servidores da Secretaria de Meio Ambiente de diversos crimes ambientais, além de lavagem de dinheiro.</p>
+                                    </div>
+                                    <a target="_blank" href="https://g1.globo.com/ma/maranhao/noticia/2020/03/11/fotos-em-area-indigena-mostram-desmatamento-causado-por-fraudes-em-manejos-florestais-no-maranhao.ghtml" class="stretched-link"></a>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card">
+                                    <img src="https://s2.glbimg.com/hsEl-QFt2dOsg0ruTW9OL5-ylGA=/0x0:1200x600/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/Q/U/mVelLWTI6x25GHA3NpIA/1ada70efa3abde5e3c63195b485f94a5.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Óleo de andiroba é alternativa de renda para comunidades ribeirinhas na Amazônia</h5>
+                                        <p class="card-text">Óleo é conhecido por utilização contra dores de garganta, cicatrização de ferimentos e como repelente de insetos, entre outras propriedades medicinais.</p>
+                                    </div>
+                                    <a target="_blank" href="https://g1.globo.com/natureza/amazonia/noticia/2020/03/14/oleo-de-andiroba-e-alternativa-de-renda-para-comunidades-ribeirinhas-na-amazonia.ghtml" class="stretched-link"></a>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card">
+                                    <img src="https://s2.glbimg.com/Z7WwpREBSpQjEaXdtaXa35YKfoE=/0x0:2500x1667/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/R/S/N4tVSrTj63AO9T520b2g/f99a0531-marcelo-brandt-g1.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Área agrícola cresce 3,3% em dois anos e ocupa 7,6% do território nacional em 2018, diz IBGE</h5>
+                                        <p class="card-text">Municípios de Mato Grosso, Maranhão e Pará lideram expansão da agricultura, especialmente da soja, sobre florestas e pastagens.</p>
+                                    </div>
+                                    <a target="_blank" href="https://g1.globo.com/economia/agronegocios/noticia/2020/03/26/area-agricola-cresce-33percent-em-dois-anos-e-ocupa-76percent-do-territorio-nacional-em-2018-diz-ibge.ghtml" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="list" class="row" style="display:none;">
+                            <div class="card mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="https://s2.glbimg.com/SSQ9TnWyxPDvd38lCW4fBw2LVMY=/0x0:2000x1333/1600x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/0/v/n1mxdVTvOHII3Vd0YHwA/foca-reinserida.jpg" class="card-img"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Foca resgatada com desidratação é reinserida na natureza nos EUA</h5>
+                                            <p class="card-text">Apelidada de Amélia Bedélia, a foca ficou 3 semanas sob os cuidados no Aquário Nacional, em Baltimore.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <a target="_blank" href="https://g1.globo.com/olha-que-legal/noticia/2020/03/24/foca-resgatada-com-desidratacao-e-reinserida-na-natureza-nos-eua.ghtml" class="stretched-link"></a>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="https://s2.glbimg.com/HpMDRN0kqDlozYKdPhLU6oJXoHg=/0x10:1280x715/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/3/Y/bT4jPmToyixYswJgZWig/whatsapp-image-2020-03-11-at-20.18.21.jpeg"
+                                            class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Fotos em área indígena mostram desmatamento causado por fraudes em manejos florestais no MA</h5>
+                                            <p class="card-text">Imagens fazem parte da 'Operação Canafístula', da Polícia Federal, que acusa servidores da Secretaria de Meio Ambiente de diversos crimes ambientais, além de lavagem de dinheiro.</p>
+                                        </div>
+                                    </div>
+                                    <a target="_blank" href="https://g1.globo.com/ma/maranhao/noticia/2020/03/11/fotos-em-area-indigena-mostram-desmatamento-causado-por-fraudes-em-manejos-florestais-no-maranhao.ghtml" class="stretched-link"></a>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="https://s2.glbimg.com/hsEl-QFt2dOsg0ruTW9OL5-ylGA=/0x0:1200x600/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/Q/U/mVelLWTI6x25GHA3NpIA/1ada70efa3abde5e3c63195b485f94a5.jpg"
+                                            class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Óleo de andiroba é alternativa de renda para comunidades ribeirinhas na Amazônia</h5>
+                                            <p class="card-text">Óleo é conhecido por utilização contra dores de garganta, cicatrização de ferimentos e como repelente de insetos, entre outras propriedades medicinais.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <a target="_blank" href="https://g1.globo.com/natureza/amazonia/noticia/2020/03/14/oleo-de-andiroba-e-alternativa-de-renda-para-comunidades-ribeirinhas-na-amazonia.ghtml" class="stretched-link"></a>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="https://s2.glbimg.com/Z7WwpREBSpQjEaXdtaXa35YKfoE=/0x0:2500x1667/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/R/S/N4tVSrTj63AO9T520b2g/f99a0531-marcelo-brandt-g1.jpg" class="card-img"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Área agrícola cresce 3,3% em dois anos e ocupa 7,6% do território nacional em 2018, diz IBGE</h5>
+                                            <p class="card-text">Municípios de Mato Grosso, Maranhão e Pará lideram expansão da agricultura, especialmente da soja, sobre florestas e pastagens.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <a target="_blank" href="https://g1.globo.com/economia/agronegocios/noticia/2020/03/26/area-agricola-cresce-33percent-em-dois-anos-e-ocupa-76percent-do-territorio-nacional-em-2018-diz-ibge.ghtml" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="secao destaque">Imagens</h3>
+                        <div id="carouselLabels" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselLabels" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselLabels" data-slide-to="1"></li>
+                                <li data-target="#carouselLabels" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <img src="https://gazetaweb.globo.com/fotosPortal/portal_gazetaweb_com/noticias/foto_pequena/2018/02/201802160951_8ca058b383.jpg" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="https://i.pinimg.com/236x/73/ca/0b/73ca0b0a560338aef47c15f55daf1f25.jpg" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="https://i.pinimg.com/236x/3a/f1/cf/3af1cfcc93575f33f0bc7c962cb2cc2d.jpg" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="https://i.pinimg.com/236x/87/00/03/870003cb82d25537a2961ecf70ef2f58.jpg" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="https://i.pinimg.com/236x/a9/39/6d/a9396d4419c497be15ae7f80748c78a8.jpg" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <img src="https://www.fundospaisagens.com/Imagens/wallpaper-do-fundo-do-mar.jpg" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="https://www.fundospaisagens.com/Imagens/fundo-do-mar.png" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="https://www.fundospaisagens.com/Imagens/fundo-de-ecra-do-fundo-do-mar.jpg" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="https://www.fundospaisagens.com/Imagens/fundo-do-fundo-do-mar.jpg" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="https://www.fundospaisagens.com/Imagens/golfinho-no-mar.jpg" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group">
+                                        <div class="card">
+                                            <img src="https://i.pinimg.com/236x/a9/31/84/a93184b19094679e0bdfd9d98b21d4ad.jpg" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="https://i.pinimg.com/236x/40/82/d3/4082d396fd705e97640d8498df90884d.jpg" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="https://i.pinimg.com/236x/b1/22/99/b122990bfa7a79b07582e18f5ac83e80.jpg" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="https://i.pinimg.com/236x/4e/57/f1/4e57f1bcef166edeae1816185c45fffb.jpg" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="https://i.pinimg.com/236x/42/9d/55/429d55ab9743d2978a8f288b60c3cf3c.jpg" class="card-img-top" alt="...">
+                                            <a href="#" data-toggle="modal" data-target="#modalImagens" class="stretched-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselLabels" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselLabels" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <h3 class="secao destaque">Recentemente </h3>
+                        <div id="carouselArtigos" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselArtigos" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselArtigos" data-slide-to="1"></li>
+                                <li data-target="#carouselArtigos" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                                <img src="https://s2.glbimg.com/H2wUuGG_l-4jlYJ3V1X0Hr3Mn_I=/0x0:1280x853/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/E/g/oHejIxR9CsFWUrlosH6A/img-2236a.jpg" class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Pastagens subutilizadas podem ampliar área de soja no Cerrado por mais de 10 anos sem desmatamento, diz estudo</h5>
+                                                    <p class="card-text">Levantamento feito pela organização TNC Brasil mostra que a necessidade de novas áreas para o grão no bioma é de 73 mil km² em uma década, enquanto a disponibilidade de pastos com aptidão agrícola é
+                                                        de 185 mil km².
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a target="_blank" href="https://g1.globo.com/economia/agronegocios/noticia/2020/03/31/pastagens-subutilizadas-podem-ampliar-area-de-soja-no-cerrado-por-mais-de-10-anos-sem-desmatamento-diz-estudo.ghtml" class="stretched-link"></a>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                                <img src="https://s2.glbimg.com/IFrInDyofY46WO6MAjypA9m8Dqg=/0x0:1400x789/1600x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/a/1/HfaYYLTHWcdUC23IJzpg/foto-edemir-rodrigues.jpg" class="card-img"
+                                                    alt="...">
+                                            </div>
+                                            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">O peixe que virou símbolo da conservação da biodiversidade no Pantanal</h5>
+                                                    <p class="card-text">Em 2019, o dourado ganhou proteção contra a pesca em todo o território de MT e MS, depois de dez anos de proibições locais.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a target="_blank" href="https://g1.globo.com/natureza/desafio-natureza/noticia/2019/06/27/o-peixe-que-virou-simbolo-da-conservacao-da-biodiversidade-no-pantanal.ghtml" class="stretched-link"></a>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                                <img src="https://s2.glbimg.com/taX5HhL5yZmOS1i0B7yEieuGt-o=/0x0:1280x720/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/S/2/UbARqCTuiFXB0IqdKT2w/resex-rio-ouro-preto-14-03-2020-rinkon-martins.jpeg"
+                                                    class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Unidades de conservação de RO têm atividades suspensas até 17 de abril; fiscalização é feita por satélite</h5>
+                                                    <p class="card-text">Ações de políticas públicas realizadas com as comunidades tradicionais das áreas também foram paralisadas por conta da pandemia do novo coronavírus. Estado tem 10 casos confirmados da Covid-19.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a target="_blank" href="https://g1.globo.com/ro/rondonia/noticia/2020/04/02/unidades-de-conservacao-de-ro-tem-atividades-suspensas-ate-17-de-abril-fiscalizacao-e-feita-por-satelite.ghtml" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                                <img src="https://s2.glbimg.com/-DwFKLXuQbP-l055SfKK_wHE8i4=/0x0:2000x3000/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/T/F/7Rrrz6TDe1Ux6m64FoUw/nadia-trigesa-bronx-zoo-coronavirus.jpg"
+                                                    class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Tigre tem teste positivo para coronavírus em zoológico de Nova York</h5>
+                                                    <p class="card-text">De acordo com o 'The New York Times', esta pode ser a primeira infecção do vírus em um animal nos EUA e também a primeira em um tigre no mundo.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a target="_blank" href="https://g1.globo.com/natureza/noticia/2020/04/05/tigre-tem-coronavirus-em-zoologico-de-nova-york.ghtml" class="stretched-link"></a>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                                <img src="https://s2.glbimg.com/gvU0A5u5ZdnYtK06uIgXavz_4r8=/0x0:1400x1723/1600x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/O/I/eWVIcsT4AA3oybfjahSA/harpias-ninho.jpg" class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Fotógrafo consegue imagem rara de harpia e filhote no ninho</h5>
+                                                    <p class="card-text">Carlos Tuyama fez fotos da ave ameaçada de extinção com 45 dias de vida ao lado da mãe em ninho de Rolim de Moura, Rondônia. Ao G1, ele contou desafios de fotografar a espécie.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a target="_blank" href="https://g1.globo.com/olha-que-legal/noticia/2020/04/02/fotografo-consegue-imagem-rara-de-harpia-e-filhote-no-ninho.ghtml" class="stretched-link"></a>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                                <img src="https://s2.glbimg.com/SmXCa_OQhwBW6bJFG2B91gY2m3o=/0x0:2000x1333/1600x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/M/k/ieluGOT1irpcymwJqyVA/urso-negro.jpg" class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Filhote de urso-negro órfão se recupera em zoo na Califórnia</h5>
+                                                    <p class="card-text">Com idade estimada em 7 semanas, ursinho já ganhou peso e abriu os olhos. Cuidadores lhe deram um companheiro de pelúcia.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a target="_blank" href="https://g1.globo.com/olha-que-legal/noticia/2020/03/31/filhote-de-urso-negro-orfao-se-recupera-em-zoo-na-california.ghtml" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                                <img src="https://s2.glbimg.com/QA8NlqWTV0GdMFoqyIBFY2q9zgk=/0x0:1024x682/1600x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/1/D/lUoadySZmNETZQP930Mw/000-1qa4kv.jpg" class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Incêndio florestal deixa 19 mortos na China</h5>
+                                                    <p class="card-text">O incêndio ameaça a segurança da cidade de Xichang, que fica a 2,2 quilômetros.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a target="_blank" href="https://g1.globo.com/mundo/noticia/2020/03/31/incendio-florestal-deixa-mortos-na-china.ghtml" class="stretched-link"></a>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                                <img src="https://s2.glbimg.com/lzOPjuS-SgGeKZJipedy1AuTvN4=/0x0:2702x1795/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/2/g/zXAtCDRryCWBpiQhumuA/dsc-1361.jpg" class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Gavião-carijó passa por cirurgia para retirar bala após levar tiro no peito em MT</h5>
+                                                    <p class="card-text">Quando foi resgatado, ave já estava com perda de peso e parte do ferimento havia necrosado. Natural da fauna brasileira, o gavião-carijó é uma ave de rapina de bico forte e garras afiadas, inserida em
+                                                        seu nicho com o papel de regular a população de roedores e aves pequenas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a target="_blank" href="https://g1.globo.com/mt/mato-grosso/noticia/2020/03/12/gaviao-carijo-passa-por-cirurgia-para-retirar-bala-apos-levar-tiro-no-peito-em-mt.ghtml" class="stretched-link"></a>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                                <img src="https://s2.glbimg.com/o9AkpaIYeLen7WDLMuSC8mNYVTU=/0x0:660x371/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/g/L/Vky1oyRbiGdL3itj3VAw/girafabbc.jpg" class="card-img" alt="...">
+                                            </div>
+                                            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Caçadores matam duas das últimas três girafas brancas do mundo</h5>
+                                                    <p class="card-text">Guardas florestais encontraram as carcaças de uma fêmea e seu filhote em um vilarejo no nordeste do Quênia.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a target="_blank" href="https://g1.globo.com/natureza/noticia/2020/03/11/cacadores-matam-duas-das-ultimas-tres-girafas-brancas-do-mundo.ghtml" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="secao destaque">Galeria </h3>
+                        <div id="carouselGaleria" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselGaleria" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselGaleria" data-slide-to="1"></li>
+                                <li data-target="#carouselGaleria" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div id="" class="row row-cols-3 row-cols-md-3">
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/e4/75/33/e4753328383191e50fd29254eec09046--little-prince-fox-beautiful-pictures.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Raposa </h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/08/ee/89/08ee89371be1800e812c43713e528b93--raising-rabbits-bunny-rabbits.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Coelho</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/da/b7/50/dab750f5cd4a408684b6ca60786e73e4.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Guaxinim</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/d5/c6/00/d5c600e428d3c916fe8cb8f7bb8c8782.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Pantera</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/cd/ee/a8/cdeea87e36288e357ab30cbb07e048c0.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Coruja</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/61/97/1f/61971f00939a4d09e0d30beba1fe8d21.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Lobo</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/8d/9f/0f/8d9f0f0bb585ec4c5c7df99ae1a38511.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Urso Polar</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/30/af/1d/30af1d1369816f5ef01f948452a0195d.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Gato</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/d4/59/d3/d459d3da469a2996e1bfe833e53f7094.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Tucano</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div id="" class="row row-cols-3 row-cols-md-3">
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/3b/23/71/3b23716e6d4fe7ceeba5c11571557510.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Cavalo</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/3f/b8/f0/3fb8f0f4a2fc1d790a10b09071aef148.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Koala</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/60/0f/46/600f46f9bc9ac65d764fcd9b6398a71a.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Girafa</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/5a/7d/0f/5a7d0fdb169edb3c20ed645aaf091ae2.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Porco</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/cb/c6/8f/cbc68f5a9e7eb10dda2c20489cd12fe8.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Ganso</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/88/57/15/885715e30d7d545ab982c2609ddd30fd.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Urso</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/35/43/24/354324eddd8fa49174c7fb14275b6119.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Pato</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/c2/f7/44/c2f7446525943879b7312783e1329343.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Elefante</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/70/f9/cc/70f9ccef5fd6b5b7897918bd2c2db510.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Tigre</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div id="" class="row row-cols-3 row-cols-md-3">
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/a3/e4/68/a3e46846ae28b1dbb7b6f92e58ebef54.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Cabra</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/1e/43/9b/1e439b90380481576f5cafcc39d3c3ec.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Burro</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/35/39/65/353965958528ff598880f64ca52a381f.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Flamingo</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/99/f1/48/99f148cac23c5f08790fc343baab8e55.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Panda</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/d3/dd/d6/d3ddd6710f28a2d80e4170fce37fb6ef.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Pavão</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/e0/c7/cc/e0c7cc4b2349a7155a3ebf1e36c54002.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Golfinho</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/f4/83/ea/f483eacb4ad27f896c43eb1b6a655f7c.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Avestruz</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/0d/a9/21/0da9213b0541dadaee9ff5c2c90e85ec.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Caracol</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-4">
+                                            <div class="card">
+                                                <img src="https://i.pinimg.com/236x/63/c6/e9/63c6e97dcb97cb52dea94d6f5db36de7.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Veado</h5>
+                                                </div>
+                                                <a href="#" data-toggle="modal" data-target="#modalGaleria" class="stretched-link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="secao destaque">Vídeos</h3>
+                        <div id="carouselVideos" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselVideos" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselVideos" data-slide-to="1"></li>
+                                <li data-target="#carouselVideos" data-slide-to="2"></li>
+                                <li data-target="#carouselVideos" data-slide-to="3"></li>
+                                <li data-target="#carouselVideos" data-slide-to="4"></li>
+
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <iframe width="350" height="200" src="https://www.youtube.com/embed/dlNtclPMMuE">
+                                    </iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="350" height="200" src="https://www.youtube.com/embed/kojpmHygB1A">
+                                    </iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="350" height="200" src="https://www.youtube.com/embed/40vzdFKbH_A">
+                                    </iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="350" height="200" src="https://www.youtube.com/embed/wAcwjWi6I9Y">
+                                    </iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="350" height="200" src="https://www.youtube.com/embed/dPCzTWj36TQ">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container footer destaque">
+        <div class="row footer_area">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
+                <img src="imgs/logo_transparent_cortado.png" class="">
+                <p style="padding-top: 10px;">O <strong>EcoWeb</strong> é um portal de notícias sobre natureza e ecologia. Aqui você encontra todas informações sobre o que naturalmente ocorre de mais importante no nosso planeta.</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <h6><strong>Links</strong></h6>
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Animais</a></li>
+                            <li><a href="">Notícias</a></li>
+                            <li><a href="">Projetos</a></li>
+                            <li><a href="">Quem somos?</a></li>
+                            <li><a href="">Loja Online</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <ul>
+                            <li><a href="">Domésticos</a></li>
+                            <li><a href="">Silvestres</a></li>
+                            <li><a href="">Aquáticos</a></li>
+                            <li>
+                                <p></p>
+                            </li>
+                            <li><a href="">Amazônia</a></li>
+                            <li><a href="">Oceano</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <ul>
+                            <li><a href="">Apresentação</a></li>
+                            <li><a href="">História</a></li>
+                            <li><a href="">Contato</a></li>
+                            <li>
+                                <p></p>
+                            </li>
+                            <li><a href="">Twitter</a></li>
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
+                <h6><strong>Redes Sociais</strong></h6>
+                <blockquote class="twitter-tweet" data-lang="pt" data-theme="light">
+                    <p lang="pt" dir="ltr">F🌎deu... Agora sim <a href="https://twitter.com/hashtag/fudeu?src=hash&amp;ref_src=twsrc%5Etfw">#fudeu</a> <a href="https://t.co/LEXJOAD30U">https://t.co/LEXJOAD30U</a></p>&mdash; Natureza (@natureza) <a href="https://twitter.com/natureza/status/1178230969943367686?ref_src=twsrc%5Etfw">29 de setembro de 2019</a></blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div id="copyrigth" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                <p>EcoWeb - Todos os direitos reservados - 2020</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src='main.js'></script>
+
+
+</html>

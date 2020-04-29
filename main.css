@@ -1,0 +1,278 @@
+* {
+    font-family: 'abril_fatfaceregular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #57ba98 !important;
+}
+
+
+/* Estilização header */
+
+header {
+    margin-bottom: 1%;
+}
+
+.logo {
+    width: 300px;
+    margin-top: 1%;
+}
+
+.destaque {
+    background-color: #196b69;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+.nav-item a {
+    background-color: #135251;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: #edf5e1;
+}
+
+.nav-item a:link {
+    color: white;
+}
+
+.nav-item a:visited {
+    color: white;
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+.nav-item a:active {
+    color: white;
+}
+
+#links {
+    background-color: #135251;
+    border-radius: 10px;
+    color: white;
+    margin-top: 1%;
+    font-size: 13px;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+#links a:link {
+    color: white;
+}
+
+#links a:visited {
+    color: white;
+}
+
+#links a:hover {
+    color: white;
+}
+
+#links a:active {
+    color: white;
+}
+
+.navbar-toggler {
+    background-color: #135251 !important;
+    border-radius: 10px !important;
+    margin-bottom: 5px;
+    color: white;
+    text-align: center;
+}
+
+.dropdown-menu {
+    border-radius: 10px !important;
+    background-color: #196b69 !important;
+    padding: 5px !important;
+}
+
+
+/* Estilização main */
+
+#carouselPrincipal {
+    margin-bottom: 2%;
+}
+
+.secao {
+    color: white;
+    padding: 5px 5px 5px 5px;
+}
+
+.secao button {
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+}
+
+#tagExclusivo {
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    background-color: #135251;
+    padding: 5px 5px 5px 5px;
+}
+
+#carouselArtigos .card {
+    height: 125px;
+}
+
+#carouselGaleria {
+    margin-bottom: 20px;
+}
+
+#carouselArtigos .card-body {
+    padding: 10px;
+}
+
+#carouselVideos .carousel-inner {
+    text-align: center;
+}
+
+#carouselGaleria .card-body {
+    padding: 5px;
+    text-align: center;
+}
+
+#carouselArtigos {
+    margin-bottom: 15%;
+}
+
+.card-body,
+.row .no-gutters {
+    background-color: #377560;
+}
+
+.col-xl-4 .carousel-indicators {
+    bottom: -30px;
+}
+
+button p {
+    margin-left: 15px;
+    display: inline;
+}
+
+#carouselLabels .card {
+    height: 10%;
+}
+
+.card-title {
+    color: white;
+    font-weight: bold;
+}
+
+.card-text {
+    color: white;
+}
+
+
+/* Estilização footer */
+
+.footer {
+    margin-top: 20px;
+    color: white;
+}
+
+.footer_area {
+    padding: 10px;
+}
+
+.footer a:link {
+    color: white;
+}
+
+.footer a:visited {
+    color: white;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer a:active {
+    color: white;
+}
+
+#copyrigth {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+
+/* Estilização do redimensionamento das imagens */
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#carouselPrincipal img {
+    object-fit: cover;
+    width: 251px;
+    height: 400px;
+}
+
+#list img {
+    object-fit: cover;
+    width: 538px;
+    height: 172px;
+}
+
+#grid img {
+    object-fit: cover;
+    width: 538px;
+    height: 172px;
+}
+
+#carouselGaleria img {
+    object-fit: cover;
+    width: 208px;
+    height: 100px;
+}
+
+#carouselArtigos img {
+    object-fit: cover;
+    width: 508px;
+    height: 127px;
+}
+
+#carouselLabels img {
+    object-fit: cover;
+    width: 519px;
+    height: 150px;
+}
+
+#exclusivo img {
+    object-fit: cover;
+    width: 688px;
+    height: 220px;
+}
+
+
+/* Estilização modais */
+
+.modal-header {
+    background-color: #377560 !important;
+}
+
+.modal-title {
+    color: white;
+}
+
+.modal button {
+    background-color: #377560;
+    color: white;
+}
+
+.modal-body {
+    text-align: center;
+}
